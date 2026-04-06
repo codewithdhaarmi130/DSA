@@ -2,7 +2,6 @@
 
 intervals = [[1,3], [2,6], [8,10], [15,18]]
 
-# Step 1: Sort intervals
 intervals.sort()
 
 merged = []
