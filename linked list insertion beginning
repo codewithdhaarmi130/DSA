@@ -1,0 +1,29 @@
+# Node class
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+# Insert at beginning
+def insert_beginning(head, data):
+    new_node = Node(data)
+    new_node.next = head
+    return new_node
+
+# Print linked list
+def print_list(head):
+    temp = head
+    while temp:
+        print(temp.data, end=" -> ")
+        temp = temp.next
+    print("None")
+
+# Example usage
+head = None
+
+head = insert_beginning(head, 30)
+head = insert_beginning(head, 20)
+head = insert_beginning(head, 10)
+
+print("Linked List:")
+print_list(head)
